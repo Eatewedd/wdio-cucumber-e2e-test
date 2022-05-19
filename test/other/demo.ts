@@ -1,5 +1,4 @@
 import { Given, When, Then } from "@wdio/cucumber-framework";
-import chaI from "chai"
 
 
 // Given("Google page {string} is opened", function(url:string) {
