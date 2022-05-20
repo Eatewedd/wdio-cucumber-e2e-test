@@ -1,18 +1,26 @@
 import BasePage from './base-page.po';
 
 class HomePage extends BasePage {
+
+    get acceptAllCookiesButton() {
+        return $(`#cookiescript_accept`);
+    }
+
     get tekstyButton() {
-        return $(`//*[@id="__next"]/header/div/nav/div/a[3]`);
+        return $(`#__next > header > div > nav > div > a:nth-child(3)`);
+    }
+
+    public async clickAcceptAllCookiesButton() {
+        // await this.acceptAllCookiesButton.waitForDisplayed();
+        // await this.acceptAllCookiesButton.waitForClickable();
+        await this.acceptAllCookiesButton.click();
+        return this;
     }
 
     public async clickTekstyButton() {
-        await this.tekstyButton.waitForDisplayed();
-        console.log("await this.tekstyButton.waitForDisplayed();");
-        await this.tekstyButton.waitForClickable();
-        console.log("await this.tekstyButton.waitForClickable();");
+        // await this.tekstyButton.waitForDisplayed();
+        // await this.tekstyButton.waitForClickable();
         await this.tekstyButton.click();
-        console.log("await this.tekstyButton.click();");
-        await browser.pause(1000);
         return this;
     }
 }
