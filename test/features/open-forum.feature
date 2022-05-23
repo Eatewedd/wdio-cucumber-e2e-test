@@ -1,6 +1,6 @@
 Feature: Open Forum page
 
-    # @CDAction
+    # @CDAction2
     Scenario Outline: Opening Forum page
         Given The user enters the main page
         When The user clicks the Forum button
