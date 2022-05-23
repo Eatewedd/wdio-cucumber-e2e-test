@@ -6,13 +6,13 @@ export default class BasePage {
     }
 
     public async getURL() {
-        await browser.url("");
+      await browser.url("");
     }
 
     public clickOn(element: any) {
-        this.waitForElement(element);
-        element.click();
-        return this;
+      this.waitForElement(element);
+      element.click();
+      return this;
     }
 
     public waitForElement(element: any) {
