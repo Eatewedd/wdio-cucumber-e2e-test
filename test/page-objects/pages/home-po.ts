@@ -13,6 +13,14 @@ class HomePage extends BasePage {
     public async clickAcceptAllCookiesButton() {
         // await this.acceptAllCookiesButton.waitForDisplayed();
         // await this.acceptAllCookiesButton.waitForClickable();
+        // await this.acceptAllCookiesButton.click();
+        this.clickOn(this.acceptAllCookiesButton);
+        return this;
+    }
+
+    public async clickNewsyButton() {
+        await this.acceptAllCookiesButton.waitForDisplayed();
+        await this.acceptAllCookiesButton.waitForClickable();
         await this.acceptAllCookiesButton.click();
         return this;
     }
