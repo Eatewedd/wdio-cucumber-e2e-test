@@ -1,6 +1,6 @@
 Feature: Open Teksty page
 
-        @CDAction
+        # @CDAction
         Scenario Outline: Opening teksty page
         Given The user enters the main page
         When The user clicks the Teksty button
