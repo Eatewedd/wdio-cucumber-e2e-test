@@ -1,6 +1,6 @@
 Feature: Accept coookies feature
 
-    # @CDAction
+    # @CDAction23
     Scenario Outline: Accepting cookies test
         Given The user enters the main page
         When The user accepts all cookies
